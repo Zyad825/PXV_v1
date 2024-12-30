@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PXV</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="icons/18s.png" alt="falid"class="s18"></a>
+            <ul class="nav-links">
+                <li><a href="img/index.html">images</a></li>
+                <li><a href="#">offline</a></li>
+                <li><a href="#">login</a></li>
+            </ul>
+        </div>
+        <div class="search-box">
+            <img src="icons/searsh2.png" alt=""width="20px"class="i">
+            <input type="text" name="" id=""placeholder="searsh......"class="search-input"onkeyup="searsh()">
+        </div>
+    </nav>
+ 
+    <div class="all-items">
+    <!--nav bar-->
+ 
+<!--               اعلان               -->
+<div class="slider">
+</div>
+    <!--         the work            -->
+  
+  
+    <div class="all-videos">
+        <div class="videoBox">
+            <div class="vedio">
+                <iframe src="https://www.xvideos-ar.com/embedframe/ufboofm004a" frameborder=0 width=510 height=400 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <!--<video loop="loop"src="1v.mp4" type="video/mp4"controls=""></video>-->
+            </div>
+                <div class="title">
+                <p>candy1{}</p>
+                <hr>
+            </div>
+            <div class="controls">
+                <a href="#"onclick="alert('thank you');"class="a">
+                <img src="icons/love_like_heart_icon_196980.png" alt="falid">
+                </a>
+                <a href="#"onclick="alert('not work now');"class="a">
+                    <img src="icons/share.png" alt="falid">
+                </a>
+                <a href="#"onclick="alert('downloading now thank you')"class="a"download>
+                    <img src="icons/upload.png" alt="falid">
+                </a>
+            </div>
+
+        </div>
+        <div class="videoBox">
+            <div class="vedio">
+                <iframe src="https://www.xvideos-ar.com/embedframe/ufadadk2593" frameborder=0 width=510 height=400 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            </div>
+                <div class="title">
+                <p> candy2{}</p>
+                <hr>
+            </div>
+            <div class="controls">
+                <a href="#"onclick="alert('thank you');"class="a">
+                    <img src="icons/love_like_heart_icon_196980.png" alt="falid">
+                    </a>
+                    <a href="#"onclick="alert('not work now');"class="a">
+                        <img src="icons/share.png" alt="falid">
+                    </a>
+                    <a href="#"onclick="alert('downloading now thank you')"class="a">
+                        <img src="icons/upload.png" alt="falid">
+                    </a>
+            </div>
+
+        </div>
+
+        <div class="videoBox">
+            <div class="vedio">
+                <iframe src="https://www.xvideos-ar.com/embedframe/uevuvuh897c" frameborder=0 width=510 height=400 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            </div>
+                <div class="title">
+                <p>candy3{}</p>
+                <hr>
+            </div>
+            <div class="controls">
+                <a href="#"onclick="alert('thank you');"class="a">
+                    <img src="icons/love_like_heart_icon_196980.png" alt="falid">
+                    </a>
+                    <a href="#"onclick="alert('not work now');"class="a">
+                        <img src="icons/share.png" alt="falid">
+                    </a>
+                    <a href="#"onclick="alert('downloading now thank you')"class="a">
+                        <img src="icons/upload.png" alt="falid">
+                    </a>
+            </div>
+
+        </div>
+
+        <div class="videoBox">
+            <div class="vedio">
+                <iframe src="https://www.xvideos-ar.com/embedframe/ktfippfff80" frameborder=0 width=510 height=400 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            </div>
+                <div class="title">
+                <p>candy3{}</p>
+                <hr>
+            </div>
+            <div class="controls">
+                <a href="#"onclick="alert('thank you');"class="a">
+                    <img src="icons/love_like_heart_icon_196980.png" alt="falid">
+                    </a>
+                    <a href="#"onclick="alert('not work now');"class="a">
+                        <img src="icons/share.png" alt="falid">
+                    </a>
+                    <a href="#"onclick="alert('downloading now thank you')"class="a">
+                        <img src="icons/upload.png" alt="falid">
+                    </a>
+            </div>
+
+        </div>
+
+    </div><!--end div all-videos-->
+
+
+
+
+    <!--          under page           -->
+
+
+</div><!--end div all-items-->
+<script>
+    function searsh(){
+       let searchBar = document.querySelector('.search-input').value.toUpperCase();//input text
+       let productList = document.querySelector('.all items');//all items
+       let product = document.querySelectorAll('.videoBox');//التحتوي علي عنصر المراد البحث عنه
+       let productName = document.getElementsByTagName('p');//اسم العنصر المكاتوب بين الاتش تو
+
+
+       for (let i = 0; i<productName.length; i++){
+        if (productName[i].innerHTML.toUpperCase().indexOf(searchBar) >= 0){
+            product[i].style.display = "";
+        } else{
+            product[i].style.display = "none";
+        }
+
+       }
+
+    }
+</script>
+</body>
+</html>
